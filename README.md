@@ -1,4 +1,4 @@
-# Super-Traders-Eva
+# Super Traders
 
 
 In this app, we can make buy/sell transactions.

@@ -16,8 +16,9 @@ What can we do;
 - We can create Portfolios,
 - We can create transactions between buyer and seller.
 - We can see Users,Portfolios,Shares and Transactions.
-also;
--
+
+## also;
+
 - Users make a trade with their shares and set the prices (the last transaction is the new price of the share).
 - Users must have enough shares in their portfolios to be able to sell.
 - In order for the users to buy the shares, they must first have a portfolio of the share they want to buy.

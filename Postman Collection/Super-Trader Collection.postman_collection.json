@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "a6a4a565-a756-4fa2-b77f-c7aa24064e54",
+		"name": "Super-Trader Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17166936"
+	},
+	"item": [
+		{
+			"name": "addPortfolio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userid\":5,\r\n    \"share_id\": \"CJS\",\r\n    \"quantity\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/addPortfolio",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"addPortfolio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPortfolio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/getPortfolio/5",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"getPortfolio",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listShare",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/shares",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"shares"
+					],
+					"query": [
+						{
+							"key": "4",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createShare",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"shareid\": \"LPG\",\r\n    \"rate\": 10.22\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/createShare",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"createShare"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteShare",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/deleteShare/ABC",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"deleteShare",
+						"ABC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"buyer_id\": 4,\r\n    \"seller_id\": 5,\r\n    \"quantity\": 1,\r\n    \"share_id\": \"CJS\",\r\n    \"sellPrice\": 84.52\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/trade",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"trade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/users",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"user-F\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/createUser",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

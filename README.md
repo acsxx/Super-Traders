@@ -31,3 +31,81 @@ To run this project you will need to add the following environment variables to 
 `DBUSER`
 
 `DBPASSWORD`
+
+## API Usage
+
+#### Add new user
+
+```http
+  POST /api/createUser
+```
+```json
+{
+    "name": "user-F"
+}
+```
+
+#### List Users
+
+```http
+  GET /api/users
+```
+---
+
+#### Add new Share
+
+```http
+  POST /api/createShare
+```
+```json
+{
+    "shareid": "ACS",
+    "rate": 10.22
+}
+```
+#### List Shares
+
+```http
+  GET /api/shares
+```
+
+#### Delete Share by id
+
+```http
+  DELETE /api/deleteShare/ABC
+```
+
+---
+#### List User Portfolios
+
+```http
+  GET /api/getPortfolio/5
+```
+
+#### Add new Portfolio
+```http
+  POST /api/addPortfolio
+```
+```json
+{
+    "userid":5,
+    "share_id": "CJS",
+    "quantity": 0
+}
+```
+
+---
+#### Create a Transaction
+
+```http
+  POST /api/trade
+```
+```json
+{
+    "buyer_id": 4,
+    "seller_id": 5,
+    "quantity": 1,
+    "share_id": "CJS",
+    "sellPrice": 84.52
+}
+```

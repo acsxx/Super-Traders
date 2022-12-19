@@ -1,4 +1,4 @@
-# Super-Traders-Eva
+# Super-TraderS
 
 ## API Usage
 
